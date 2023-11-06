@@ -1,0 +1,23 @@
+#titulo{
+    width: 800px;
+}
+#INSTUCCIONES{
+    background-color: rgb(141, 222, 247);
+    padding: 2px;
+    border-color: rgb(29, 253, 4);
+    border-style: dashed;
+    border-width: 3px;
+}
+#img{
+    width: 100px;
+}
+#inicio{
+    background-color: rgb(191, 254, 64);
+}
+video{
+    background-image: url("consola.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 25px;
+}

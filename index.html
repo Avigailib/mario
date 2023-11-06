@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>juega con mario</title>
+    <link rel="stylesheet" href="style.css">
+    <!---LIBRERIA DE ML5 PARA APRENDIZAJE AUTOMATICO Y RECONOCIMIENTO DE IMAGENES-->
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+<!----LIBRERIAS DE BOOTSTRAP----->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<!-----------------------ENLACE A COMPLEMENTOS PARA EL SONIDO-------------------------->
+<!-- Enlace p5.js y sus complementos como p5.dom.js o p5.sound.js -->
+<script src="lib/p5.min.js" type="text/javascript"></script>
+<!-- Enlace p5.play.js -->
+<script src="lib/p5.play.js" type="text/javascript"></script>
+<!-- Enlace p5.dom.js -->
+<script src="lib/p5.dom.js" type="text/javascript"></script>
+
+
+<!-- MIS ARCHIVOS DE JAVASCRIPT DE LAS OTRAS PANTALLAS -->
+<script src="scripts/sprites.js" type="text/javascript"></script>
+<script src="characters_environment.js" type="text/javascript"></script>
+
+<!------------LIBRERIA PARA REPRODUCIR SONIDOS Y AUDIOS DESDE JS -------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+<!----------TIPO DE LETRA IMPORTADA DE GOOGLE FONTS------->
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+
+</head>
+<body background="fondo.jpg">
+    <center>
+        <div>
+            <h1>
+                <img src="TITULO2.png" id="titulo">
+            </h1>
+            <button id="INSTUCCIONES" data-toggle="modal" data-target="#ins">📄 INSTUCCIONES 📄</button>
+        </div>
+        <img src="mario_y_luigi.jpg">
+        <button id="inicio" onclick="startGame()">iniciar</button>
+        <p></p>
+        <h3 id="status"></h3>
+        <p></p>
+        <div id="lienzo"></div>
+        <div id="camara"></div>
+        <h5>Creditos a linuk</h5>
+        <div class="modal fade" id="ins">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+<button class="close" data-dismiss="modal">x</button>
+<h3 style="background-color: rgb(70, 150, 242);">INSTUCCIONES</h3>
+                    </div>
+                    <div class="modal-body">
+<img src="derecha.png " id="img">
+<h4>Para moverte a la derecha coloca la nariz de lado izquierdo.
+    recuerda que la camara esta invertida.
+</h4>
+<img src="izquierda.png" id="img">
+<h4>Para moverte a la izquierda coloca la nariz de lado derecho.</h4>
+<img src="saltar.png" id="img">
+<h4>para salta coloca la nariz en la parte superior del <video src=""></video></h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </center>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
